@@ -1,14 +1,14 @@
 .header-color {
-  background: #373b44; /* fallback for old browsers */
+  background: #3c3b3f; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #4286f4,
-    #373b44
+    #605c3c,
+    #3c3b3f
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #4286f4,
-    #373b44
+    #605c3c,
+    #3c3b3f
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .land-page {
@@ -17,19 +17,22 @@
   height: 100%;
 }
 .landing-grid {
-  background: #373b44; /* fallback for old browsers */
+  background: #e0eafc; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #4286f4,
-    #373b44
+    #cfdef3,
+    #e0eafc
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #4286f4,
-    #373b44
+    #cfdef3,
+    #e0eafc
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  text-align: center;
+
+  width: 100%;
   height: 100%;
+  margin: auto;
+  text-align: center;
 }
 
 .avatar-img {
