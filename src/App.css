@@ -51,14 +51,14 @@
 
 .avatar-img {
   height: 250px;
-  margin-top: 50px;
+  margin-top: 75px;
   border-radius: 50%;
   border: 0.3rem solid white;
 }
 @media screen and (min-width: 768px) {
   .avatar-img {
-    height: 500px;
-    margin: auto;
+    height: 300px;
+    margin: 10px;
     border-radius: 50%;
     border: 0.3rem solid white;
   }
@@ -67,18 +67,17 @@
 .banner-text {
   background-color: black;
   opacity: 0.8;
-  width: 75%;
+  width: 85%;
   margin: auto;
   border-radius: 10px;
-  margin-top: 3rem;
   text-align: center;
 }
 .banner-text h1 {
-  font-size: 66px;
+  font-size: 52px;
   font-weight: bold;
   color: white;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .banner-text hr {
   border-top: 5px dotted white;
