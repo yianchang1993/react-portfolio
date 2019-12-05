@@ -11,6 +11,11 @@
     #373b44
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+.land-page {
+  width: 100%;
+  margin: auto;
+  height: 100%;
+}
 .landing-grid {
   background: #373b44; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -24,6 +29,7 @@
     #373b44
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
+  height: 100%;
 }
 
 .avatar-img {
@@ -68,6 +74,31 @@
   font-size: 5em;
   padding: 8px;
 }
-.project-grid {
-  display: flex;
+
+@media screen and (min-width: 768px) {
+  .project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+}
+.categories-tbs {
+  background: #e0eafc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #cfdef3,
+    #e0eafc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #cfdef3,
+    #e0eafc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+.categories-tbs strong {
+  color: black;
 }

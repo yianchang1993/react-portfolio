@@ -4,7 +4,7 @@ import { Grid, Cell } from "react-mdl";
 class Landing extends React.Component {
   render() {
     return (
-      <div style={{ width: "100%", margin: "auto" }}>
+      <div className="land-page">
         <Grid className="landing-grid">
           <Cell col={12}>
             <img
@@ -16,7 +16,7 @@ class Landing extends React.Component {
             <div className="banner-text">
               <h1>Yi-An Chang</h1>
               <hr />
-              <p>html|css|JavaScript|React|C#|.NET|</p>
+              <p>html|css|JavaScript|React|Pyhon|C#|.NET</p>
               <div className="social-link">
                 {/* linedin */}
                 <a
