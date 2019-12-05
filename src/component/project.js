@@ -131,7 +131,7 @@ class Project extends React.Component {
           ripple
         >
           <Tab>
-            <strong> react</strong>
+            <strong>react</strong>
           </Tab>
           <Tab>
             <strong>python</strong>
