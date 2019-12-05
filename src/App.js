@@ -7,7 +7,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function App() {
   return (
-    <div>
+    <div className="layout">
       <Layout>
         <Header
           className="header-color"

@@ -141,7 +141,7 @@ class Project extends React.Component {
           </Tab>
         </Tabs>
 
-        <Grid>
+        <Grid className="categories-tbs-grid">
           <Cell col={12}>
             <div className="content">{this.toggleCategories()}</div>
           </Cell>
