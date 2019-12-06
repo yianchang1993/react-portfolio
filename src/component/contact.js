@@ -9,7 +9,7 @@ class Contact extends React.Component {
         <Grid className="contact-grid">
           <Cell col={6}>
             <h2>Yi-An (Andy) Chang</h2>
-            <img src={imgUrl} alt="avatar" style={{ height: "300px" }}></img>
+            <img src={imgUrl} alt="avatar"></img>
           </Cell>
           <Cell col={6}>
             <h2>Contact Me</h2>
@@ -26,19 +26,19 @@ class Contact extends React.Component {
                 </ListItem> */}
 
                 <ListItem>
-                  <ListItemContent
-                    style={{ fontSize: "30px", fontFamily: "Anton" }}
-                  >
-                    <i className="fas fa-envelope" aria-hidden="Ture" />
-                    {""} Email: andysamguy @gmail.com
+                  <ListItemContent style={{ fontSize: "30px" }}>
+                    <div className="context-details">
+                      <i className="fas fa-envelope" aria-hidden="Ture" />
+                      email: andysamguy@gmail.com
+                    </div>
                   </ListItemContent>
                 </ListItem>
                 <ListItem>
-                  <ListItemContent
-                    style={{ fontSize: "30px", fontFamily: "Anton" }}
-                  >
-                    <i className="fab fa-skype" aria-hidden="Ture" />
-                    {""} Skype: andysamguy
+                  <ListItemContent style={{ fontSize: "30px" }}>
+                    <div className="context-details">
+                      <i className="fab fa-skype" aria-hidden="Ture" />
+                      Skype: andysamguy
+                    </div>
                   </ListItemContent>
                 </ListItem>
               </List>

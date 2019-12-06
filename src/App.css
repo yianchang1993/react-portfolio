@@ -194,7 +194,7 @@
   text-align: center;
   justify-content: center;
   min-height: 100%;
-  width: 80%;
+  width: 90%;
   background: white;
   color: black;
   /* border: 2px solid #605c3c; */
@@ -203,13 +203,15 @@
 .contact-grid img {
   border-radius: 10%;
   border: 0.1rem solid #605c3c;
+  height: 200px;
 }
 .contact-grid h2 {
-  font-family: "Anton", sans-serif;
+  font-family: sans-serif;
+  font-size: medium;
 }
+
 .contact-grid p {
-  font-family: "oxygen", sans-serif;
-  font-weight: bold;
+  /* font-weight: bold; */
   margin-top: 1em;
 }
 .contact-grid hr {
@@ -217,19 +219,34 @@
   width: 50%;
   margin: auto;
 }
-.contact-list {
-  padding-top: 5rem;
-  text-align: left;
-  font-size: large;
+.context-details {
+  padding-top: 1rem;
+  text-align: center;
+  font-size: xx-small;
+  margin-right: 1rem;
 }
-@media screen and (min-width: 1500px) {
-  .contact-list {
+@media screen and (min-width: 700px) {
+  .context-details {
     padding-top: 5rem;
-    text-align: center;
+    text-align: left;
+    font-size: x-large;
+  }
+  .contact-grid h2 {
+    font-family: sans-serif;
+  }
+  .contact-paragraph p {
+    /* padding-top: 0.1 rem; */
+    font-size: large;
+  }
+  .contact-grid img {
+    border-radius: 10%;
+    border: 0.1rem solid #605c3c;
+    height: 300px;
   }
 }
 
 .contact-paragraph p {
   /* padding-top: 0.1 rem; */
-  font-size: large;
+  font-size: x-small;
+  margin-top: 0.1rem;
 }
