@@ -197,7 +197,7 @@
   width: 80%;
   background: white;
   color: black;
-  border: 2px solid #605c3c;
+  /* border: 2px solid #605c3c; */
   margin-bottom: 50px;
 }
 .contact-grid img {
