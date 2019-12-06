@@ -20,14 +20,16 @@ class Project extends React.Component {
       activeTab: 0,
       content_react: [
         {
-          cardTitle: "React Project 1:My Portfolio",
+          cardTitle: "React Project 1: My Portfolio",
           cardText:
-            " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan convallis."
+            " Building my personal portfolio website using react. Incluing my CV and project done",
+          githubUrl: "https://github.com/yianchang1993/react-portfolio"
         },
         {
-          cardTitle: "React Project 2",
+          cardTitle: "React Project 2: Hotel Website",
           cardText:
-            " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan convallis."
+            " Porject of building website for hotel. inculding functionality of sorting",
+          githubUrl: "https://github.com/yianchang1993/hotel-web"
         }
       ],
       content_python: [
@@ -44,6 +46,9 @@ class Project extends React.Component {
       ]
     };
   }
+  handleClick_github_btn = (e, id) => {
+    return (window.location.href = this.state.content_react[id].githubUrl);
+  };
   toggleCategories() {
     if (this.state.activeTab === 0) {
       return (
@@ -51,7 +56,10 @@ class Project extends React.Component {
           {this.state.content_react.map((item, index) => {
             return (
               <div key={index}>
-                <Card shadow={5} style={{ width: "400px", margin: "auto" }}>
+                <Card
+                  shadow={5}
+                  style={{ width: "400px", height: "325px", margin: "auto" }}
+                >
                   <CardTitle
                     expand
                     style={{
@@ -65,7 +73,12 @@ class Project extends React.Component {
                   </CardTitle>
                   <CardText>{item.cardText}</CardText>
                   <CardActions border>
-                    <Button colored>github</Button>
+                    <Button
+                      onClick={e => this.handleClick_github_btn(e, index)}
+                      colored
+                    >
+                      github
+                    </Button>
                     <Button colored>Live Demo</Button>
                   </CardActions>
                   <CardMenu style={{ color: "#fff" }}>
@@ -83,7 +96,10 @@ class Project extends React.Component {
           {this.state.content_python.map((item, index) => {
             return (
               <div key={index}>
-                <Card shadow={5} style={{ width: "400px", margin: "auto" }}>
+                <Card
+                  shadow={5}
+                  style={{ width: "400px", height: "325px", margin: "auto" }}
+                >
                   <CardTitle
                     expand
                     style={{
@@ -101,7 +117,7 @@ class Project extends React.Component {
                     <Button colored>Live Demo</Button>
                   </CardActions>
                   <CardMenu style={{ color: "#fff" }}>
-                    <IconButton name="share" />
+                    <IconButton name="share" href="www.google.com"></IconButton>
                   </CardMenu>
                 </Card>
               </div>
@@ -119,6 +135,7 @@ class Project extends React.Component {
   }
 
   render() {
+    console.log();
     return (
       <div className="categories-tbs">
         <Tabs
@@ -140,7 +157,6 @@ class Project extends React.Component {
             <strong>C#</strong>
           </Tab>
         </Tabs>
-
         <Grid className="categories-tbs-grid">
           <Cell col={12}>
             <div className="content">{this.toggleCategories()}</div>
