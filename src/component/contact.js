@@ -9,15 +9,7 @@ class Contact extends React.Component {
         <Grid className="contact-grid">
           <Cell col={6}>
             <h2>Yi-An (Andy) Chang</h2>
-            <img src={imgUrl} alt="avatar" style={{ height: "180px" }}></img>
-            <div className="contact-paragraph">
-              <p style={{ width: "75%", margin: "auto", paddingTop: "3em" }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan
-                convallis.Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit. Aenan convallis.Aenan convallis.Lorem ipsum dolor sit
-                amet,
-              </p>
-            </div>
+            <img src={imgUrl} alt="avatar" style={{ height: "300px" }}></img>
           </Cell>
           <Cell col={6}>
             <h2>Contact Me</h2>
@@ -52,6 +44,12 @@ class Contact extends React.Component {
               </List>
             </div>
           </Cell>
+          <div className="contact-paragraph">
+            <p style={{ width: "75%", margin: "auto", paddingTop: "3em" }}>
+              Feel free to contact me in any time if I am the ideal candidate of
+              the position:)
+            </p>
+          </div>
         </Grid>
       </div>
     );
