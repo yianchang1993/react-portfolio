@@ -16,15 +16,6 @@ class Contact extends React.Component {
             <hr />
             <div className="contact-list">
               <List>
-                {/* <ListItem>
-                  <ListItemContent
-                    style={{ fontSize: "30px", fontFamily: "Anton" }}
-                  >
-                    <i className="fa fa-phone-square" aria-hidden="Ture" />
-                    {""} Phone:
-                  </ListItemContent>
-                </ListItem> */}
-
                 <ListItem>
                   <ListItemContent style={{ fontSize: "30px" }}>
                     <div className="context-details">

@@ -149,6 +149,7 @@
   min-height: 100%;
   margin: auto;
 }
+
 .contact-body {
   margin: auto;
   background: #e0eafc; /* fallback for old browsers */
@@ -211,7 +212,6 @@
 }
 
 .contact-grid p {
-  /* font-weight: bold; */
   margin-top: 1em;
 }
 .contact-grid hr {
@@ -223,7 +223,10 @@
   padding-top: 1rem;
   text-align: center;
   font-size: xx-small;
-  margin-right: 1rem;
+}
+.contact-paragraph p {
+  font-size: x-small;
+  margin-top: 0.1rem;
 }
 @media screen and (min-width: 700px) {
   .context-details {
@@ -235,7 +238,6 @@
     font-family: sans-serif;
   }
   .contact-paragraph p {
-    /* padding-top: 0.1 rem; */
     font-size: large;
   }
   .contact-grid img {
@@ -243,10 +245,4 @@
     border: 0.1rem solid #605c3c;
     height: 300px;
   }
-}
-
-.contact-paragraph p {
-  /* padding-top: 0.1 rem; */
-  font-size: x-small;
-  margin-top: 0.1rem;
 }
