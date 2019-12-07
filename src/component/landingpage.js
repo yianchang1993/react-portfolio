@@ -12,7 +12,7 @@ class Landing extends React.Component {
             <div className="banner-text">
               <h1>Yi-An Chang</h1>
               <hr />
-              <p>html | css | JavaScript | React | Pyhon | C# | .NET</p>
+              <p>Web Developement | JavaScript | React | Pyhon | C# | .NET</p>
               <hr />
               <div className="social-link">
                 {/* linedin */}

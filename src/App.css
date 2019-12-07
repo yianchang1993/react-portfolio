@@ -54,6 +54,7 @@
   border-radius: 50%;
   border: 0.3rem solid white;
 }
+
 @media screen and (min-width: 768px) {
   .avatar-img {
     height: 300px;
@@ -200,6 +201,7 @@
   color: black;
   /* border: 2px solid #605c3c; */
   margin-bottom: 50px;
+  box-shadow: 10px 10px 10px 10px grey;
 }
 .contact-grid img {
   border-radius: 10%;
@@ -231,11 +233,16 @@
 @media screen and (min-width: 700px) {
   .context-details {
     padding-top: 5rem;
-    text-align: left;
+    /* text-align: left; */
     font-size: x-large;
+  }
+  .contact-list {
+    text-align: center;
   }
   .contact-grid h2 {
     font-family: sans-serif;
+    font-size: x-large;
+    font-weight: bold;
   }
   .contact-paragraph p {
     font-size: large;
@@ -244,5 +251,266 @@
     border-radius: 10%;
     border: 0.1rem solid #605c3c;
     height: 300px;
+  }
+}
+/* resume page */
+
+@media screen and (min-width: 800px) {
+  .resume-right-col {
+    background: #27221f;
+    color: #ffffff;
+    float: right;
+    margin: 5rem 1.5%;
+    width: 60%;
+  }
+  .paragraph {
+    /* background: red; */
+    margin: auto;
+  }
+  .resume-left-col {
+    background: #e0eafc; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #cfdef3,
+      #e0eafc
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cfdef3, #e0eafc);
+    margin: 5rem 1.5%;
+    width: 33%;
+  }
+  .resume-left-col img {
+    margin-top: 1em;
+    height: 200px;
+    border-radius: 50%;
+    border: 0.1rem solid #605c3c;
+  }
+  .resume-left-content {
+    text-align: center;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+  }
+  .resume-left-content hr {
+    width: 80%;
+    border-top: 3px solid #27221f;
+    margin: auto;
+  }
+  .resume-left-content p {
+    margin-top: 1em;
+  }
+  .resume-right-content {
+    margin-top: 1em;
+    margin-left: 1em;
+  }
+
+  .edu-duration {
+    margin-top: 0.5em;
+  }
+  .exp-duration {
+    margin-top: 0.5em;
+  }
+  .resume-right-content hr {
+    width: 90%;
+    border-top: 3px solid white;
+    margin: auto;
+  }
+  .resume-right-content h2 {
+    margin-top: 0.3em;
+  }
+  .skills-details {
+    margin-top: 0.1rem;
+  }
+  .skill {
+    /* background: white; */
+    margin-right: 1em;
+    margin-top: 0em;
+    margin-bottom: 1em;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
+}
+
+/* resume page */
+
+@media screen and (min-width: 800px) {
+  .resume-right-col {
+    background: #27221f;
+    color: #ffffff;
+    float: right;
+    margin: 5rem 1.5%;
+    width: 60%;
+  }
+  .paragraph {
+    /* background: red; */
+    margin: auto;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  .resume-left-col {
+    background: #e0eafc; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #cfdef3,
+      #e0eafc
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cfdef3, #e0eafc);
+    margin: 5rem 1.5%;
+    width: 33%;
+  }
+  .resume-left-col img {
+    margin-top: 1em;
+    height: 200px;
+    border-radius: 50%;
+    border: 0.1rem solid #605c3c;
+  }
+  .resume-left-content {
+    text-align: center;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+  }
+  .resume-left-content hr {
+    width: 80%;
+    border-top: 3px solid #27221f;
+    margin: auto;
+  }
+  .resume-left-content p {
+    margin-top: 1em;
+  }
+  .resume-right-content {
+    margin-top: 1em;
+    margin-left: 1em;
+  }
+  .edu-duration {
+    margin-top: 2.5em;
+  }
+  .exp-duration {
+    margin-top: 2.5em;
+  }
+  .resume-right-content hr {
+    width: 90%;
+    border-top: 3px solid white;
+    margin: auto;
+  }
+  .resume-right-content h2 {
+    margin-top: 0.3em;
+  }
+  .skills-details {
+    margin-top: 0.1rem;
+  }
+  .skill {
+    /* background: white; */
+    margin-right: 1em;
+    margin-top: 0em;
+    margin-bottom: 1em;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
+}
+@media screen and (max-width: 800px) {
+  .resume-right-col {
+    background: #27221f;
+    color: #ffffff;
+    margin-top: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    width: 100%;
+  }
+  .resume-left-col p {
+    font-size: 50%;
+    margin-top: 1em;
+  }
+  .resume-left-col {
+    background: #e0eafc; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #cfdef3,
+      #e0eafc
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cfdef3, #e0eafc);
+    margin-top: 3em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  .resume-left-col h2 {
+    font-weight: bold;
+    font-size: 100%;
+    margin-top: 0em;
+  }
+  .resume-left-col h4 {
+    margin-top: -4em;
+    padding: 0em;
+    font-size: xx-small;
+    font-weight: bold;
+  }
+  .resume-left-col img {
+    margin-top: 3em;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .resume-left-content {
+    text-align: center;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+  }
+  .resume-left-content hr {
+    width: 80%;
+    border-top: 3px solid #27221f;
+    margin: auto;
+  }
+  .resume-left-content p {
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  .resume-right-content {
+    margin-top: 1em;
+    margin-left: 1em;
+  }
+
+  .resume-right-col h2 {
+    font-size: 50%;
+  }
+  .edu-duration p {
+    font-size: 50%;
+    background: red;
+    width: 20%;
+  }
+  .school-names {
+    background: green;
+    text-align: right;
+    width: 30%;
+
+    float: right;
+  }
+  .school-names h4 {
+    font-size: 30%;
+  }
+  .school-names p {
+    font-size: 30%;
+  }
+
+  .edu-duration {
+    margin-top: 0.5em;
+  }
+  .exp-duration {
+    margin-top: 0.5em;
+  }
+  .resume-right-content hr {
+    width: 90%;
+    border-top: 3px solid white;
+    margin: auto;
+  }
+  .resume-right-content h2 {
+    margin-top: 0.3em;
+  }
+  .skills-details {
+    margin-top: 0.1rem;
+  }
+  .skill {
+    /* background: white; */
+    margin-right: 1em;
+    margin-top: 0em;
+    margin-bottom: 1em;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
   }
 }

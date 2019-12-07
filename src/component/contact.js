@@ -20,7 +20,7 @@ class Contact extends React.Component {
                   <ListItemContent style={{ fontSize: "30px" }}>
                     <div className="context-details">
                       <i className="fas fa-envelope" aria-hidden="Ture" />
-                      email: andysamguy@gmail.com
+                      e-mail: andysamguy@gmail.com
                     </div>
                   </ListItemContent>
                 </ListItem>
