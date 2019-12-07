@@ -148,9 +148,9 @@ class Project extends React.Component {
           <Tab>
             <strong>python</strong>
           </Tab>
-          <Tab>
+          {/* <Tab>
             <strong>LoRa Network Project</strong>
-          </Tab>
+          </Tab> */}
         </Tabs>
         <Grid className="categories-tbs-grid">
           <Cell col={12}>
