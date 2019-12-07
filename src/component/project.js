@@ -1,4 +1,6 @@
 import React from "react";
+import reactData from "./Data/reactdata";
+import pythonData from "./Data/pythondata";
 
 import {
   Tabs,
@@ -19,36 +21,18 @@ class Project extends React.Component {
     super(props);
     this.state = {
       activeTab: 0,
-      content_react: [
-        {
-          cardTitle: "React Project 1: My Portfolio",
-          cardText:
-            " Building my personal portfolio website using react. Incluing my CV and project done",
-          githubUrl: "https://github.com/yianchang1993/react-portfolio"
-        },
-        {
-          cardTitle: "React Project 2: Hotel Website",
-          cardText:
-            " Porject of building website for hotel. inculding functionality of sorting",
-          githubUrl: "https://github.com/yianchang1993/hotel-web"
-        }
-      ],
-      content_python: [
-        {
-          cardTitle: "Python project 1 ",
-          cardText:
-            " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan convallis."
-        },
-        {
-          cardTitle: "Python project 2",
-          cardText:
-            " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan convallis."
-        }
-      ]
+      content_react: reactData,
+      content_python: pythonData
     };
   }
   handleClick_github_btn = (e, id) => {
     return (window.location.href = this.state.content_react[id].githubUrl);
+  };
+  handleClick_livedeom_btn = (e, id) => {
+    return (window.location.href = this.state.content_react[id].demoUrl);
+  };
+  handleClick_gitpy_btn = (e, id) => {
+    return (window.location.href = this.state.content_python[id].githubUrl);
   };
   toggleCategories() {
     if (this.state.activeTab === 0) {
@@ -80,7 +64,12 @@ class Project extends React.Component {
                     >
                       github
                     </Button>
-                    <Button colored>Live Demo</Button>
+                    <Button
+                      onClick={e => this.handleClick_livedeom_btn(e, index)}
+                      colored
+                    >
+                      Live Demo
+                    </Button>
                   </CardActions>
                   <CardMenu style={{ color: "#fff" }}>
                     <IconButton name="share" />
@@ -114,8 +103,13 @@ class Project extends React.Component {
                   </CardTitle>
                   <CardText>{item.cardText}</CardText>
                   <CardActions border>
-                    <Button colored>github</Button>
-                    <Button colored>Live Demo</Button>
+                    <Button
+                      onClick={e => this.handleClick_gitpy_btn(e, index)}
+                      colored
+                    >
+                      github
+                    </Button>
+                    {/* <Button colored>Live Demo</Button> */}
                   </CardActions>
                   <CardMenu style={{ color: "#fff" }}>
                     <IconButton name="share" href="www.google.com"></IconButton>
@@ -129,7 +123,7 @@ class Project extends React.Component {
     } else if (this.state.activeTab === 2) {
       return (
         <div>
-          <h1>this is c#</h1>
+          <h1>LoRa Project</h1>
         </div>
       );
     }
@@ -155,7 +149,7 @@ class Project extends React.Component {
             <strong>python</strong>
           </Tab>
           <Tab>
-            <strong>C#</strong>
+            <strong>LoRa Network Project</strong>
           </Tab>
         </Tabs>
         <Grid className="categories-tbs-grid">

@@ -358,6 +358,12 @@
     margin: 5rem 1.5%;
     width: 33%;
   }
+  .school-names {
+    margin-left: 7rem;
+  }
+  .exp-names {
+    margin-left: 7rem;
+  }
   .resume-left-col img {
     margin-top: 1em;
     height: 200px;
@@ -471,15 +477,20 @@
   .resume-right-col h2 {
     font-size: 50%;
   }
+  .edu-body {
+    display: inline;
+  }
   .edu-duration p {
     font-size: 50%;
     background: red;
-    width: 20%;
+    width: 90%;
+    margin-top: 3rem;
   }
   .school-names {
     background: green;
     text-align: right;
     width: 30%;
+    margin-top: 0 em;
 
     float: right;
   }
