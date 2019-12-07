@@ -12,16 +12,16 @@
   }
 }
 .header-color {
-  background: #3c3b3f; /* fallback for old browsers */
+  background: #373b44; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to right,
-    #605c3c,
-    #3c3b3f
+    to left,
+    #4286f4,
+    #373b44
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to right,
-    #605c3c,
-    #3c3b3f
+    to left,
+    #4286f4,
+    #373b44
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .land-page {
@@ -205,7 +205,7 @@
 }
 .contact-grid img {
   border-radius: 10%;
-  border: 0.1rem solid #605c3c;
+  border: 0.1rem solid white;
   height: 200px;
 }
 .contact-grid h2 {
@@ -284,7 +284,7 @@
     margin-top: 1em;
     height: 200px;
     border-radius: 50%;
-    border: 0.1rem solid #605c3c;
+    border: 0.1rem solid white;
   }
   .resume-left-content {
     text-align: center;
@@ -293,7 +293,7 @@
   }
   .resume-left-content hr {
     width: 80%;
-    border-top: 3px solid #27221f;
+    border-top: 3px solid #white;
     margin: auto;
   }
   .resume-left-content p {
@@ -368,7 +368,7 @@
     margin-top: 1em;
     height: 200px;
     border-radius: 50%;
-    border: 0.1rem solid #605c3c;
+    border: 0.1rem solid white;
   }
   .resume-left-content {
     text-align: center;
