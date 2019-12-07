@@ -98,7 +98,7 @@ class Resume extends React.Component {
                   </div>
                 );
               })}
-              <hr></hr>
+
               <h2 style={{ marginTop: "1em" }}>Skills</h2>
               <div className="skill">
                 {this.state.skills.map((item, key) => {

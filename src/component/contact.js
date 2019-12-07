@@ -32,6 +32,15 @@ class Contact extends React.Component {
                     </div>
                   </ListItemContent>
                 </ListItem>
+                <ListItem>
+                  <ListItemContent style={{ fontSize: "30px" }}>
+                    <div className="context-details">
+                      <i className="fab fa-linkedin" aria-hidden="Ture" />
+                      Linkedin:
+                      https://www.linkedin.com/in/yi-an-andy-chang-53649bb3
+                    </div>
+                  </ListItemContent>
+                </ListItem>
               </List>
             </div>
           </Cell>
